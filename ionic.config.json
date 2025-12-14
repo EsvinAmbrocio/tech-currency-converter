@@ -1,0 +1,7 @@
+{
+  "name": "tech-currency-converter",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

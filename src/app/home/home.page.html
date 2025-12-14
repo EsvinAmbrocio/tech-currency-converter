@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      DivisApp - 24003541
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-item>
+    <ion-label position="stacked">
+      Cantidad en Quetzales (Q)
+    </ion-label>
+    <ion-input type="number"
+      inputmode="decimal"
+      [(ngModel)]="qtzQuantity"
+      placeholder="Ej: 100.00"></ion-input>
+  </ion-item>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        Equivalente en Dólares (USD)
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      USD {{ qtzToUsdQuantity.toFixed(2)  }}
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
